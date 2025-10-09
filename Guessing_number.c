@@ -5,37 +5,35 @@ Description:Guessing a number
 */
 #include <stdio.h>
 int main(){
-	int guessining_no;
+	int guessing_no;
 	int secret_no;
-	
-	
-	
-	
-	while(guessining_no!=secret_no)
 
-		
-   printf("Enter guessing_no(1-20):");
-    	scanf("%d",guessining_no);
-		
-		
-	{if(guessining_no<!secret_no)
-	{
-		printf("too high\n");
-    if(guessining_no>!secret_no)
-    {
-		printf("too low");
-		{
-        printf("congratulations");
-        
-		}	
-	}	
-	}	
-	}
-	
 
-	 
-	return 0;
-}	
+    printf("Enter guessing_no (Number between 1_20)\n");
+    
+
+    // Guess 1
+    printf("Enter your guess: ");
+    scanf("%d", &guessing_no);
+
+    
+    while (secret_no!=12) {
+        if (guessing_no >! secret_no) {
+            printf("Too high!\n");
+        } else {
+            printf("Too low!\n");
+        }
+
+        // Guess 2
+        printf("Try again: ");
+        scanf("%d", &guessing_no);
+    }
+
+    printf("Congratulations! You guessed the correct number: %d\n", secret_no);
+
+    return 0;
+}
+
     
 		
 		
