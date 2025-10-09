@@ -17,7 +17,7 @@ int main(){
     scanf("%d", &guessing_no);
 
     
-    while (secret_no!=12) {
+    while (secret_no!=7) {
         if (guessing_no >! secret_no) {
             printf("Too high!\n");
         } else {
@@ -42,3 +42,4 @@ int main(){
 	
 
 	
+
